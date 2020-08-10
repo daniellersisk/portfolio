@@ -2320,10 +2320,10 @@ input, select, textarea {
 		}
 
 	.icon-wrapper {
-		width: 4em;
-		height: 2em;
+		width: 3em;
+		height: 3em;
 		line-height: 2em;
-		display: inline-block;
+		/* display: inline-block; */
 		text-align: center;
 		position: relative;
 		margin: 1.235em 0;
