@@ -179,7 +179,13 @@ input, select, textarea {
 			position: absolute;
 			width: 3rem;
 		}
-
+		#banner > article .innertwo {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 22px;
+			z-index: 1;
+		}
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			border-bottom: 0;
 			color: inherit;
@@ -3630,7 +3636,9 @@ input, select, textarea {
 			.wrapper.style2.split > .inner > *:before {
 				background-color: #e6e6e6;
 			}
-
+.sidebartwo{
+	float: right; 
+}
 		.wrapper.sidebar > .inner {
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -4302,7 +4310,7 @@ input, select, textarea {
 			}
 
 				#banner > article .inner > :last-child {
-					margin-bottom: 0;
+					margin-bottom: -100px;
 				}
 
 			#banner > article h2 {
