@@ -1,11 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600|Raleway:500,700,800");
 
-/*
-	Slate by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -159,6 +154,8 @@ input, select, textarea {
 	p {
 		margin: 0 0 2em 0;
 	}
+	
+	
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: "Raleway", Helvetica, sans-serif;
@@ -2853,7 +2850,7 @@ input, select, textarea {
 		background-color: transparent;
 		border: solid 1px #e6e6e6;
 	}
-
+	
 /* Posts */
 
 	.posts {
@@ -3637,8 +3634,16 @@ input, select, textarea {
 				background-color: #e6e6e6;
 			}
 .sidebartwo{
-	float: right; 
+	float: left;
+	border-radius: 50%;
+	height: 220px;
+	width: 220px;
+	margin-top: 37px;
+
+	
 }
+
+
 		.wrapper.sidebar > .inner {
 			display: -moz-flex;
 			display: -webkit-flex;
@@ -3794,6 +3799,16 @@ input, select, textarea {
 		}
 
 /* Header */
+
+.circlearound{
+	margin-left: 16.5%;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 20px;
+	font-weight: 200;	
+}
+
+
 
 	body {
 		padding-top: 00em;
@@ -4584,9 +4599,8 @@ input, select, textarea {
 			vertical-align: middle;
 			width: 5em;
 		}
-
 			#navPanel .close:before {
-				-moz-osx-font-smoothing: grayscale;
+				-moz-osx-font-smoothi ng: grayscale;
 				-webkit-font-smoothing: antialiased;
 				display: inline-block;
 				font-style: normal;
