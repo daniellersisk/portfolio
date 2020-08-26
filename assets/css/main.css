@@ -3636,8 +3636,8 @@ input, select, textarea {
 .sidebartwo{
 	float: left;
 	border-radius: 50%;
-	height: 220px;
-	width: 220px;
+	height: 270px;
+	width: 270px;
 	margin-top: 37px;
 
 	
@@ -3801,8 +3801,8 @@ input, select, textarea {
 /* Header */
 
 .circlearound{
-	margin-left: 16.5%;
-	text-align: center;
+	margin-left: 22.5%;
+	text-align: left;
 	margin-top: 50px;
 	font-size: 20px;
 	font-weight: 200;	
