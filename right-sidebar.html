@@ -36,27 +36,11 @@
 		Maybe insert image here
 
 		<!-- Contact -->
-		<body>
-
-			<h2>Send e-mail to danielle.sisk@nyu.edu:</h2>
-			
-			<form action="mailto:danielle.sisk@nyu.edu" method="post" enctype="text/plain">
-			Name:<br>
-			<input type="text" name="name"><br>
-			E-mail:<br>
-			<input type="text" name="mail"><br>
-			Comment:<br>
-			<input type="text" name="comment" size="50"><br><br>
-			<input type="submit" value="Send">
-			<input type="reset" value="Reset">
-			</form>
-			
-			</body>
-			<!-- <section id="contact" class="wrapper split">
+		
+			<section id="contact" class="wrapper split">
 				<div class="inner">
 					<section>
 						<h2>Send me a message</h2>
-						<form method="post" action="#">
 							<div class="row gtr-uniform">
 								<div class="col-6 col-12-large col-6-medium col-12-xsmall">
 									<label for="name">Your Name</label>
@@ -71,16 +55,24 @@
 									<textarea name="message" id="message" rows="5"></textarea>
 								</div>
 								<div class="col-12">
-									<ul class="actions"> -->
+									<ul class="actions">
 	<!-- insert message notification - also link to email somehow -->										
-	<!-- <li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
+	Send With
+	<form event.preventDefault() action="https://mail.google.com/mail/?view=cm&fs=1&to=danielle.sisk@nyu.edu" method="post" enctype="text/plain">
+		<li><input type="submit" value="Gmail" class="primary" /></li>
+	</form>
+
+	<form action="mailto:danielle.sisk@nyu.edu" method="post" enctype="text/plain">
+	<li><input type="submit" value="Default E-mail Server" class="primary" /></li>
+</form>
+
+
 									</ul>
 								</div>
 							</div>
 						</form>
 					</section>
-					<section> -->
+					<section>
 						<h2>Other ways to reach me</h2>
 						<ul class="bulleted-icons">
 							<li>
