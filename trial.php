@@ -1,28 +1,36 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "email@example.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['first_name'];
+    $last_name = $_POST['last_name'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
+    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
 
-<!DOCTYPE HTML>
-<html>
-    <head>
-		<title>Danielle Sisk's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-    </head>
-    <body>
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
 
+<!DOCTYPE html>
+<head>
+<title>Form submission</title>
+</head>
+<body>
 
-<main>
+<form action="" method="post">
+First Name: <input type="text" name="first_name"><br>
+Last Name: <input type="text" name="last_name"><br>
+Email: <input type="text" name="email"><br>
+Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+<input type="submit" name="submit" value="Submit">
+</form>
 
-<p> Send Email</p>
-<form class="contact-form" action="contactform.php" method="POST"></form>
-<input type="text" name="name" placeholder="Full Name">
-<input type="text" name="mail" placeholder="Your Email">
-<input type="text" name="subject" placeholder="Subject">
-<textarea name="message" placeholder="Message"></textarea>
-<button type="submit" name="submit">Send Mail</button>
-</main>
 </body>
-<br>
-
-
-</html>
+</html> 
