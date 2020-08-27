@@ -13,6 +13,4 @@ if(isset($_POST['submit'])){
     mail($mailTo, $subject, $txt, $headers);
     header("Location: right-sidebar.html?mailsend");
 }
-?>
-
  
