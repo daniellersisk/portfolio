@@ -2813,8 +2813,8 @@ input, select, textarea {
 		}
 
 			.post .image img {
-				width: 350px;
-				height: 275px;
+				width: 250px;
+				height: 175px;
 				cursor: pointer;
 
 			}
