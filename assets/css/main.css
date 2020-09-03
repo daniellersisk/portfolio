@@ -180,7 +180,7 @@ input, select, textarea {
 			position: relative;
 			display: inline-block;
 			vertical-align: middle;
-			font-family: 'Times New Roman', Times, serif;
+			font-family: "Raleway", Helvetica, sans-serif;
 			font-size: 24px;
 			z-index: 1;
 		}
@@ -2859,6 +2859,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		padding-top: 100px;
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
@@ -2874,7 +2875,7 @@ input, select, textarea {
 	}
 
 		.posts .post {
-			width: calc(33.33333333% - 1.25em);
+			width: calc(29.33333333% - 1.25em);
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3601,6 +3602,7 @@ input, select, textarea {
 			.wrapper.style2 .post .content {
 				background-color: #fff;
 				border: 0;
+				padding-left: 0px;
 			}
 
 			.wrapper.style2 table tbody tr {
