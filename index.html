@@ -11,7 +11,7 @@
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				<h1><a href="index.html"> Danielle <span >Sisk</span></a></h1>
+				<h1><a href="index.html"> Danielle <span > Renee Sisk</span></a></h1>
 				<nav id="nav">
 					<ul>
 						<li><a href="webdev.html">Web Development</a>
@@ -34,18 +34,80 @@
 
 		<!-- Banner -->
 			<section id="banner">
-			
 				<article>
 					<div class="inner">
-						<p class='innertwo'>Hi. I'm Danielle Sisk, a website developer from Silicon Valley living in Brooklyn, New York.
-						</p>
+						<div class="typewriter">
+							<div class="typewriter-text">Hi. I'm Danielle Sisk, a website developer. Welcome to my website.</div>
+							<div>
+								<br>
+								<br>
+							<li><a href="#" class="button" onclick=>Where I'm located</a></li>
+
+						</div>
+						
 					</div>
 				</article>
 			</section>
 
-		<!-- Three -->
+		<!-- MAP -->
+		<!DOCTYPE html>
+		<html>
+		  <head>
+			<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+			<script
+			  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBlzfz968nbbVLDGojbDPdJSQp9O1sKYo&callback=initMap&libraries=&v=weekly"
+			  defer
+			></script>
+			<style type="text/css">
+			  /* Always set the map height explicitly to define the size of the div
+			   * element that contains the map. */
+			  #map {
+				height: 100%;
+			  }
 		
+			  /* Optional: Makes the sample page fill the window. */
+			  html,
+			  body {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			  }
+			</style>
+			<script>
+			  "use strict";
 		
+			  function initMap() {
+				const myLatlng = {
+				  lat: -25.363,
+				  lng: 131.044
+				};
+				const map = new google.maps.Map(document.getElementById("map"), {
+				  zoom: 4,
+				  center: myLatlng
+				});
+				const marker = new google.maps.Marker({
+				  position: myLatlng,
+				  map,
+				  title: "Click to zoom"
+				});
+				map.addListener("center_changed", () => {
+				  // 3 seconds after the center of the map has changed, pan back to the
+				  // marker.
+				  window.setTimeout(() => {
+					map.panTo(marker.getPosition());
+				  }, 3000);
+				});
+				marker.addListener("click", () => {
+				  map.setZoom(7);
+				  map.setCenter(marker.getPosition());
+				});
+			  }
+			</script>
+		  </head>
+		  <body>
+			<div id="map"></div>
+		  </body>
+		</html>
 	
 
 		<!-- Scripts -->
