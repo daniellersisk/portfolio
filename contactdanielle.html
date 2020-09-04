@@ -1,165 +1,160 @@
-]
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Danielle Sisk's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Header -->
-        <header id="header">
-            <h1><a href="index.html"> Danielle <span >Sisk</span></a></h1>
-            <nav id="nav">
-                <ul>
-					<li><a href="index.html">Home</a></li>
-
-                    <li><a href="webdev.html">Web Development</a>
-                        <ul>
-                            <li><a href="webdev.html"> Websites</a></li>
-                            <li><a href="webdev.html#articles"> Articles</a></li>
-                            <li><a href="webdev.html#vidscroll">Videos </a></li>
-                            <li><a href="webdev.html#langscroll">Technical Skills </a></li>
-
-                        </ul>
-                    </li>                    
-					<li><a href="bio.html">About</a>
-					</ul>
-            </nav>
-        </header>
-		<section id="contact" class="wrapper split">
-			<div class="inner">
-				<!-- <section>
-					<h2>Send me a message</h2>
-					<form method="post" action="#">
-						<div class="row gtr-uniform">
-							<div class="col-6 col-12-large col-6-medium col-12-xsmall">
-								<label for="name">Name</label>
-								<input placeholder="Full Name" type="text" name="name" id="name" />
-							</div>
-							<div class="col-6 col-12-large col-6-medium col-12-xsmall">
-								<label for="email">Email</label>
-								<input placeholder="Your Email" type="email" name="email" id="email" />
-							</div>
-							<div class="col-12">
-								<label for="message">Message</label>
-								<textarea placeholder="Your Message" name="message" id="message" rows="5"></textarea>
-							</div>
-							<div class="col-12">
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="primary" /></li>
-									<li><input type="reset" value="Reset" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</section> -->
-				<section>
-					<h2>Contact Danielle</h2>
-					<ul class="bulleted-icons">
-						<li>
-							<span class="icon-wrapper"><span class="icon solid fa-envelope"></span></span>
-							<h3>Email</h3>
-							<p><a href>danielle.sisk@nyu.edu</a></p>
-						</li>
-						
-						<li>
-							<span class="icon-wrapper"><span class="icon brands fa-github"></span></span>
-							<h3>Github</h3>
-							<p><a href="https://github.com/daniellersisk">https://github.com/daniellersisk</a></p>
-						</li>
-						
-						<li>
-							<span class="icon-wrapper"><span class="icon brands fa-linkedin-in"></span></span>
-							<h3>LinkedIn</h3>
-							<p><a href="https://www.linkedin.com/in/daniellesisk/">https://www.linkedin.com/in/daniellesisk/</a></p>
-						</li>
-					</ul>
-				</section>
-			</div>
-		</section>
-
-		<!-- MAP -->
 <!DOCTYPE html>
 <html>
   <head>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-  <script
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBlzfz968nbbVLDGojbDPdJSQp9O1sKYo&callback=initMap&libraries=&v=weekly"
-    defer
-  ></script>
-
-  <style type="text/css">
-    /* Always set the map height explicitly to define the size of the div
-     * element that contains the map. */
-    #map {
-	height: 60%;
-	width: 50%
-    }
-
-    /* Optional: Makes the sample page fill the window. */
-    html,
-    body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    }
-    
-  </style>
-  <button onclick=tryzoom() class="button"> My Location</button>
-
-  <script>
-    "use strict";
-
-  const tryzoom = function initMap() {
-	  //location 
-    const myLatlng = {
-      lat: 40.673369,
-      lng: -73.943828,
-	};
-	//map
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 14,
-      center: myLatlng
-	});
-	//marker
-    const marker = new google.maps.Marker({
-      position: myLatlng,
-      map,
-      title: "Click to zoom"
-	});
-	//onclick marker zoom
-
-    let zoom = marker.addListener("click", () => {
-      map.setZoom(16);
-      map.setCenter(marker.getPosition());
-    });
-	}
-	setTimeout(zoom(), 6000);
-    
-  </script>
-
+    <title>Danielle Sisk's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
   </head>
-  <body>
-  <div id="map"></div>
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <h1>
+        <a href="index.html"> Danielle <span>Sisk</span></a>
+      </h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+
+          <li>
+            <a href="webdev.html">Web Development</a>
+            <ul>
+              <li><a href="webdev.html"> Websites</a></li>
+              <li><a href="webdev.html#articles"> Articles</a></li>
+              <li><a href="webdev.html#vidscroll">Videos </a></li>
+              <li><a href="webdev.html#langscroll">Technical Skills </a></li>
+            </ul>
+          </li>
+          <li><a href="bio.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="contact" class="wrapper split">
+      <div class="inner">
+		<section>
+			<h2>My Neighborhood</h2>
+			<!-- MAP -->
+			<!DOCTYPE html>
+			<html>
+			  <head>
+				<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+				<script
+				  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBlzfz968nbbVLDGojbDPdJSQp9O1sKYo&callback=initMap&libraries=&v=weekly"
+				  defer
+				></script>
+	  
+				<style type="text/css">
+				  /* Always set the map height explicitly to define the size of the div
+			   * element that contains the map. */
+				  #map {
+					height: 100%;
+					width: 100%;
+				  }
+	  
+				  /* Optional: Makes the sample page fill the window. */
+				  html,
+				  body {
+					height: 100%;
+					margin: 0px;
+					padding: 0px;
+				  }
+				</style>
+				<script>
+				  "use strict";
+	  
+				  function initMap() {
+					//location
+					const myLatlng = {
+					  lat: 40.673369,
+					  lng: -73.943828,
+					};
+					//map
+					const map = new google.maps.Map(document.getElementById("map"), {
+					  zoom: 12,
+					  center: myLatlng,
+					});
+					//marker
+					const marker = new google.maps.Marker({
+					  position: myLatlng,
+					  map,
+					  title: "Click to zoom",
+					});
+					//timeout marker zoom
+	  
+					setTimeout(() => {
+					  map.setZoom(15);
+					  map.setCenter(marker.getPosition());
+					}, 1200);
+				  };
+				</script>
+				  <!-- <button onclick="go()" class="neighborhood">
+					  Map of My Neighborhood
+					</button> -->
+				
+			  </head>
+			  <body>
+				<div id="map"></div>
+			  </body>
+			</html>
+		  </section>
+      
+
+        <section>
+          <h2>Contact Me</h2>
+          <ul class="bulleted-icons">
+            <li>
+              <span class="icon-wrapper"
+                ><span class="icon solid fa-envelope"></span
+              ></span>
+              <h3>Email</h3>
+              <p><a href>danielle.sisk@nyu.edu</a></p>
+            </li>
+
+            <li>
+              <span class="icon-wrapper"
+                ><span class="icon brands fa-github"></span
+              ></span>
+              <h3>Github</h3>
+              <p>
+                <a href="https://github.com/daniellersisk"
+                  >https://github.com/daniellersisk</a
+                >
+              </p>
+            </li>
+
+            <li>
+              <span class="icon-wrapper"
+                ><span class="icon brands fa-linkedin-in"></span
+              ></span>
+              <h3>LinkedIn</h3>
+              <p>
+                <a href="https://www.linkedin.com/in/daniellesisk/"
+                  >https://www.linkedin.com/in/daniellesisk/</a
+                >
+              </p>
+            </li>
+           
+          </ul>
+        </section>
+      </div>
+    </section>
+
+   
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
-</html>
-
-        
-
-
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>
