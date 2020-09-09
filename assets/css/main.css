@@ -1816,7 +1816,6 @@ input, select, textarea {
 	}
 
 /* Button */
-
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
@@ -1830,8 +1829,8 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		border: 0;
-		border-radius: 0;
+		/* border: 0;
+		border-radius: 0; */
 		cursor: pointer;
 		display: inline-block;
 		font-family: "Raleway", Helvetica, sans-serif;
@@ -4043,7 +4042,7 @@ input, select, textarea {
 			animation: none;
 			background-color: transparent;
 			box-shadow: none;
-			overflow: hidden;
+			overflow: visible;
 			position: absolute;
 			top: 1.5em;
 		}
@@ -4056,6 +4055,7 @@ input, select, textarea {
 				background-color: transparent;
 				color: #fff !important;
 				box-shadow: inset 0 0 0 1px #fff;
+			
 			}
 
 				#header.alt input[type="submit"]:hover,
