@@ -38,73 +38,7 @@
     </header>
     <section id="contact" class="wrapper split">
       <div class="inner">
-		<section>
-			<h2>My Neighborhood</h2>
-			<!-- MAP -->
-			<!DOCTYPE html>
-			<html>
-			  <head>
-				<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-				<script
-				  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBlzfz968nbbVLDGojbDPdJSQp9O1sKYo&callback=initMap&libraries=&v=weekly"
-				  defer
-				></script>
-	  
-				<style type="text/css">
-				  /* Always set the map height explicitly to define the size of the div
-			   * element that contains the map. */
-				  #map {
-					height: 100%;
-					width: 100%;
-				  }
-	  
-				  /* Optional: Makes the sample page fill the window. */
-				  html,
-				  body {
-					height: 100%;
-					margin: 0px;
-					padding: 0px;
-				  }
-				</style>
-				<script>
-				  "use strict";
-	  
-				  function initMap() {
-					//location
-					const myLatlng = {
-					  lat: 40.673369,
-					  lng: -73.943828,
-					};
-					//map
-					const map = new google.maps.Map(document.getElementById("map"), {
-					  zoom: 12,
-					  center: myLatlng,
-					});
-					//marker
-					const marker = new google.maps.Marker({
-					  position: myLatlng,
-					  map,
-					  title: "Click to zoom",
-					});
-					//timeout marker zoom
-	  
-					setTimeout(() => {
-					  map.setZoom(15);
-					  map.setCenter(marker.getPosition());
-					}, 1200);
-				  };
-				</script>
-				  <!-- <button onclick="go()" class="neighborhood">
-					  Map of My Neighborhood
-					</button> -->
-				
-			  </head>
-			  <body>
-				<div id="map"></div>
-			  </body>
-			</html>
-		  </section>
-      
+		
 
         <section>
           <h2>Contact Me</h2>
