@@ -4259,11 +4259,10 @@ input, select, textarea {
 
 		#banner:after {
 			pointer-events: none;
-			-moz-transition: opacity 1.5s ease-in-out, visibility 1.5s;
-			-webkit-transition: opacity 1.5s ease-in-out, visibility 1.5s;
-			-ms-transition: opacity 1.5s ease-in-out, visibility 1.5s;
-			transition: opacity 1.5s ease-in-out, visibility 1.5s;
-			background: #000511;
+			-moz-transition: opacity 2.5s ease-in-out, visibility 2.5s;
+			-webkit-transition: opacity 2.5s ease-in-out, visibility 2.5s;
+			-ms-transition: opacity 2.5s ease-in-out, visibility 2.5s;
+			transition: opacity 2.5s ease-in-out, visibility 2.5s;
 			content: '';
 			display: block;
 			height: 100%;
