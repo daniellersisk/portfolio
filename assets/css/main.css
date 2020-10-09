@@ -2074,6 +2074,10 @@ input, select, textarea {
 		text-decoration: none;
 		width: 100%;
 	}
+	.button1{
+		margin: 0 auto;
+		display: block;
+	}
 
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
@@ -2425,11 +2429,19 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			margin: 0 0 2em 0;
-			width: 100%;
+			width: 500px;
+			height: 300px;
+		}
+		.image.fit2 {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 500px;
+			height: 300px;
 		}
 
 			.image.fit img {
-				width: 100%;
+			width: 400px;
+			height: 300px;
 			}
 			.image.fit.two {
 				display: block;
